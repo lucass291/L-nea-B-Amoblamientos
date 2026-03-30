@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Comercio y Locales | Línea B Amoblamientos</title>
+  <meta name="description"
+    content="Mostradores y exhibidores comerciales a medida para gimnasios, consultorios y negocios. Soluciones completas en Bahía Blanca.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="global.css" />
+</head>
+
+<body>
+
+  <lineab-nav active="productos"></lineab-nav>
+
+  <div class="cat-hero">
+    <div class="cat-hero-bg">
+      <div class="cat-slide active" style="background-image:url('mostrador-recepcion/mostrador-escena.webp')"></div>
+    </div>
+    <div class="hero-eyebrow">Categoría</div>
+    <h1>Mobiliario para<br>Comercios</h1>
+    <p>La primera impresión de tu negocio es fundamental. Diseñamos recibidores, exhibidores y góndolas que combinan
+      estética y alta durabilidad para tráfico intenso.</p>
+  </div>
+
+  <div class="filters">
+    <a href="productos-hogar.html" class="f-btn">Hogar</a>
+    <a href="productos-oficina.html" class="f-btn">Oficina</a>
+    <button class="f-btn active">Comercio</button>
+  </div>
+
+  <div class="wrap">
+    <div class="pgrid">
+
+      <a href="producto-mostrador.html" class="pcard rv">
+        <div class="pcard-img">
+          <div class="brow"><span class="b b-free">A medida</span></div>
+          <img src="mostrador-recepcion/mostrador-fondo.webp" alt="Mostrador de Gimnasio / Recepción">
+          <div class="pcard-over"><span class="nav-cta">Presupuestar</span></div>
+        </div>
+        <div class="pcard-body">
+          <div class="pcard-cat">Recepción</div>
+          <h3 class="pcard-name">Mostrador Recepción Comercial</h3>
+          <p class="pcard-desc">Combinación perfecta de volumen sobrio y texturas de madera para un impacto visual en la
+            entrada de tu local. Construcción robusta.</p>
+          <div class="pcard-foot">
+            <span class="price" style="font-size:1.15rem; font-style:italic">Consultar valor</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+  <lineab-footer></lineab-footer>
+
+  <script src="components.js"></script>
+  <script>
+    const obs = new IntersectionObserver(e => {
+      e.forEach(en => { if (en.isIntersecting) en.target.classList.add('in'); });
+    });
+    document.querySelectorAll('.rv').forEach(el => obs.observe(el));
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Catálogo Completo | Línea B Amoblamientos</title>
+  <meta name="description"
+    content="Explorá nuestro catálogo de muebles a medida para el hogar, oficinas y locales comerciales fabricados en melamina top.">
+  <meta property="og:title" content="Catálogo | Línea B Amoblamientos">
+  <meta property="og:image" content="hero/hero-1.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="global.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR COMPONENT -->
+  <lineab-nav active="productos"></lineab-nav>
+
+  <!-- HERO BANDA -->
+  <div class="cat-hero">
+    <div class="cat-hero-bg">
+      <div class="cat-slide active" style="background-image:url('hero/hero-1.webp')"></div>
+      <div class="cat-slide" style="background-image:url('hero/hero-2.webp')"></div>
+      <div class="cat-slide" style="background-image:url('hero/hero-3.webp')"></div>
+    </div>
+    <div class="hero-eyebrow">Catálogo completo</div>
+    <h1>Todos nuestros<br>productos</h1>
+    <p>Fabricados en nuestro taller de Bahía Blanca con melamina de calidad. Diseño, entrega e instalación incluidos.
+    </p>
+  </div>
+
+  <!-- FILTROS -->
+  <div class="filters">
+    <button class="f-btn active" onclick="fil(this,'all')">Todos</button>
+    <button class="f-btn" onclick="fil(this,'hogar')">Hogar</button>
+    <button class="f-btn" onclick="fil(this,'oficina')">Oficina</button>
+    <button class="f-btn" onclick="fil(this,'comercio')">Comercio</button>
+  </div>
+
+  <!-- WRAPPER PRODUCTOS -->
+  <div class="wrap">
+
+    <!-- ══ HOGAR ══ -->
+    <div id="hogar" class="cat-section rv" data-c="hogar">
+      <div class="cat-label">
+        <div class="cat-label-left">
+          <h2>Hogar</h2>
+          <span class="qty">2 Modelos</span>
+        </div>
+        <a href="productos-hogar.html">Ver más de hogar</a>
+      </div>
+
+      <div class="pgrid">
+        <a href="producto-estanteria.html" class="pcard">
+          <div class="pcard-img">
+            <div class="brow"><span class="b b-off">17% OFF</span></div>
+            <img src="estanteria-flotante/estanteria-fondo.webp" alt="Estantería flotante de melamina" loading="lazy">
+            <div class="pcard-over">
+              <span class="nav-cta">Comprar</span>
+            </div>
+          </div>
+          <div class="pcard-body">
+            <div class="pcard-cat">Living / Cuarto</div>
+            <h3 class="pcard-name">Estantería Cuadrada Flotante</h3>
+            <p class="pcard-desc">Diseño puro con fijación invisible. Estructura melamina blanca altamente resistente.
+            </p>
+            <div class="pcard-foot">
+              <div class="prices">
+                <span class="price">$75.000</span>
+                <span class="price-old">$90.000</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="producto-mesa-luz.html" class="pcard">
+          <div class="pcard-img">
+            <div class="brow"><span class="b b-free">Envío y armados Gratis</span></div>
+            <img src="mesa-de-luz/mesa-fondo.webp" alt="Mesa de luz flotante moderna" loading="lazy">
+            <div class="pcard-over">
+              <span class="nav-cta">Comprar</span>
+            </div>
+          </div>
+          <div class="pcard-body">
+            <div class="pcard-cat">Dormitorio</div>
+            <h3 class="pcard-name">Mesa de Luz Flotante Nórdica</h3>
+            <p class="pcard-desc">Cajón oculto y líneas limpias para enaltecer habitaciones minimalistas.</p>
+            <div class="pcard-foot">
+              <div class="prices"><span class="price">$50.000</span></div>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+    <!-- ══ COMERCIO ══ -->
+    <div id="comercio" class="cat-section rv" data-c="comercio">
+      <div class="cat-label">
+        <div class="cat-label-left">
+          <h2>Comercio</h2>
+          <span class="qty">1 Modelo Principal</span>
+        </div>
+        <a href="productos-comercio.html">Ver más de comercio</a>
+      </div>
+
+      <div class="pgrid">
+        <a href="producto-mostrador.html" class="pcard">
+          <div class="pcard-img">
+            <div class="brow"><span class="b b-free">A Medida</span></div>
+            <img src="mostrador-recepcion/mostrador-fondo.webp" alt="Mostrador para recepción de gimnasio"
+              loading="lazy">
+            <div class="pcard-over">
+              <span class="nav-cta">Presupuestar</span>
+            </div>
+          </div>
+          <div class="pcard-body">
+            <div class="pcard-cat">Recepción</div>
+            <h3 class="pcard-name">Mostrador Recepción Industrial</h3>
+            <p class="pcard-desc">Combinación perfecta de volumen negro y madera para un impacto visual en la entrada de
+              tu local.</p>
+            <div class="pcard-foot">
+              <span class="price" style="font-size:1.15rem; font-style:italic">Consultar valor</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+    <!-- ══ OFICINA ══ -->
+    <div id="oficina" class="cat-section rv" data-c="oficina">
+      <div class="cat-label">
+        <div class="cat-label-left">
+          <h2>Oficina</h2>
+          <span class="qty">Próximamente</span>
+        </div>
+        <a href="productos-oficina.html">Suscribirse</a>
+      </div>
+
+      <div class="pgrid" style="grid-template-columns: 1fr;">
+        <div class="soon">
+          <div class="soon-emoji">📐</div>
+          <div class="soon-name">Escritorios y Bibliotecas en desarrollo</div>
+          <div class="soon-note">Pronto subiremos nuestra nueva cápsula "Work" con tableros acústicos, pasacables
+            integrados y estilo gerencial.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- CALL TO ACTION BAND -->
+  <div class="cta-band">
+    <div>
+      <h3>¿Necesitas algo 100% único?</h3>
+      <p>Pasanos tu plano, boceto o foto de Pinterest y fabricamos exactamente lo que tenés en la cabeza.</p>
+    </div>
+    <div class="hero-btns">
+      <a href="https://wa.me/542915241760" target="_blank" class="btn-primary">Enviar por WhatsApp</a>
+      <a href="index.html#contacto" class="btn-secondary">Llenar formulario</a>
+    </div>
+  </div>
+
+  <!-- FOOTER COMPONENT -->
+  <lineab-footer></lineab-footer>
+
+  <script src="components.js"></script>
+  <script>
+    // Slider
+    let ss = document.querySelectorAll('.cat-slide');
+    let scur = 0;
+    setInterval(() => {
+      ss[scur].classList.remove('active');
+      scur = (scur + 1) % ss.length;
+      ss[scur].classList.add('active');
+    }, 7000);
+
+    // Filters logic
+    function fil(btn, c) {
+      document.querySelectorAll('.f-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      document.querySelectorAll('.cat-section').forEach(sec => {
+        if (c === 'all' || sec.dataset.c === c) {
+          sec.style.display = 'block';
+          setTimeout(() => sec.classList.add('in'), 10);
+        } else {
+          sec.style.display = 'none';
+          sec.classList.remove('in');
+        }
+      });
+    }
+
+    // Scroll reveal observer
+    const obs = new IntersectionObserver(e => {
+      e.forEach(en => { if (en.isIntersecting) en.target.classList.add('in'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.rv').forEach(el => obs.observe(el));
+  </script>
+</body>
+
+</html>

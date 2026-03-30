@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Hogar | Línea B Amoblamientos</title>
+  <meta name="description"
+    content="Diseñamos cocinas, estanterías, y mesas de luz flotantes a medida. Fabricación propia en Bahía Blanca. Presupuesto sin cargo.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="global.css" />
+</head>
+
+<body>
+
+  <lineab-nav active="productos"></lineab-nav>
+
+  <div class="cat-hero">
+    <div class="cat-hero-bg">
+      <div class="cat-slide active" style="background-image:url('hero/hero-1.webp')"></div>
+    </div>
+    <div class="hero-eyebrow">Categoría</div>
+    <h1>Amoblamientos de<br>Hogar</h1>
+    <p>Calidez nórdica y resistencia industrial para transformar tus espacios. Estanterías, mesas de luz y modulares
+      para TV.</p>
+  </div>
+
+  <div class="filters">
+    <button class="f-btn active">Todos</button>
+    <a href="productos-oficina.html" class="f-btn">Oficina</a>
+    <a href="productos-comercio.html" class="f-btn">Comercio</a>
+  </div>
+
+  <div class="wrap">
+    <div class="pgrid">
+
+      <a href="producto-estanteria.html" class="pcard rv">
+        <div class="pcard-img">
+          <div class="brow"><span class="b b-off">17% OFF</span></div>
+          <img src="estanteria-flotante/estanteria-fondo.webp" alt="Estantería flotante de melamina">
+          <div class="pcard-over"><span class="nav-cta">Comprar</span></div>
+        </div>
+        <div class="pcard-body">
+          <div class="pcard-cat">Living / Cuarto</div>
+          <h3 class="pcard-name">Estantería Cuadrada Flotante</h3>
+          <p class="pcard-desc">Diseño puro con fijación invisible. Estructura altamente resistente.</p>
+          <div class="pcard-foot">
+            <div class="prices">
+              <span class="price">$75.000</span>
+              <span class="price-old">$90.000</span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="producto-mesa-luz.html" class="pcard rv">
+        <div class="pcard-img">
+          <div class="brow"><span class="b b-free">Envío Gratis</span></div>
+          <img src="mesa-de-luz/mesa-fondo.webp" alt="Mesa de luz flotante">
+          <div class="pcard-over"><span class="nav-cta">Comprar</span></div>
+        </div>
+        <div class="pcard-body">
+          <div class="pcard-cat">Dormitorio</div>
+          <h3 class="pcard-name">Mesa de Luz Flotante Nórdica</h3>
+          <p class="pcard-desc">Cajón oculto y líneas limpias para enaltecer habitaciones modernas.</p>
+          <div class="pcard-foot">
+            <span class="price">$50.000</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+  <lineab-footer></lineab-footer>
+
+  <script src="components.js"></script>
+  <script>
+    const obs = new IntersectionObserver(e => {
+      e.forEach(en => { if (en.isIntersecting) en.target.classList.add('in'); });
+    });
+    document.querySelectorAll('.rv').forEach(el => obs.observe(el));
+  </script>
+</body>
+
+</html>
