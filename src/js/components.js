@@ -19,7 +19,7 @@ class NavComponent extends HTMLElement {
           <li><a href="${base}index.html#servicios" class="${active==='servicios'?'active':''}">Servicios</a></li>
           <li><a href="${base}index.html#contacto"  class="${active==='contacto'?'active':''}">Contacto</a></li>
         </ul>
-        <a href="https://wa.me/542915241760" target="_blank" class="nav-cta" rel="noopener">${WA_SVG} Consultar</a>
+        <a href="https://wa.me/542916454532" target="_blank" class="nav-cta" rel="noopener">${WA_SVG} Consultar</a>
         <button class="hamburger" aria-label="Abrir menú" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
@@ -30,7 +30,7 @@ class NavComponent extends HTMLElement {
     // Floating WA button — inject once
     if (!document.querySelector('.wa-float')) {
       const waBtn = document.createElement('a');
-      waBtn.href = 'https://wa.me/542915241760';
+      waBtn.href = 'https://wa.me/542916454532';
       waBtn.target = '_blank';
       waBtn.rel = 'noopener';
       waBtn.className = 'wa-float';
@@ -86,7 +86,7 @@ class FooterComponent extends HTMLElement {
             <p class="footer-brand-desc">Diseño, fabricación e instalación de muebles a medida en Bahía Blanca. Melamina de primera calidad y terminaciones industriales.</p>
             <div class="footer-social">
               <a href="https://www.instagram.com/lineab_amoblamientos/" target="_blank" rel="noopener" aria-label="Instagram Línea B">${IG_SVG}</a>
-              <a href="https://wa.me/542915241760" target="_blank" rel="noopener" aria-label="WhatsApp">${WA_SVG}</a>
+              <a href="https://wa.me/542916454532" target="_blank" rel="noopener" aria-label="WhatsApp">${WA_SVG}</a>
             </div>
           </div>
           <div class="footer-col">
@@ -102,7 +102,7 @@ class FooterComponent extends HTMLElement {
             <div class="footer-col-title">Contacto</div>
             <ul>
               <li><a href="${base}index.html#contacto">Formulario</a></li>
-              <li><a href="https://wa.me/542915241760" target="_blank" rel="noopener">WhatsApp</a></li>
+              <li><a href="https://wa.me/542916454532" target="_blank" rel="noopener">WhatsApp</a></li>
               <li><a href="https://www.instagram.com/lineab_amoblamientos/" target="_blank" rel="noopener">@lineab_amoblamientos</a></li>
             </ul>
           </div>
