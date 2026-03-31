@@ -11,16 +11,16 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=DM+Sans:wght@300;400;500&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="global.css" />
+  <link rel="stylesheet" href="../css/global.css" />
 </head>
 
 <body>
 
-  <lineab-nav active="productos"></lineab-nav>
+  <lineab-nav base="../" active="productos"></lineab-nav>
 
   <div class="cat-hero">
     <div class="cat-hero-bg">
-      <div class="cat-slide active" style="background-image:url('mostrador-recepcion/mostrador-escena.webp')"></div>
+      <div class="cat-slide active" style="background-image:url('../mostrador-recepcion/mostrador-escena.webp')"></div>
     </div>
     <div class="hero-eyebrow">Categoría</div>
     <h1>Mobiliario para<br>Comercios</h1>
@@ -40,7 +40,7 @@
       <a href="producto-mostrador.html" class="pcard rv">
         <div class="pcard-img">
           <div class="brow"><span class="b b-free">A medida</span></div>
-          <img src="mostrador-recepcion/mostrador-fondo.webp" alt="Mostrador de Gimnasio / Recepción">
+          <img src="../mostrador-recepcion/mostrador-fondo.webp" alt="Mostrador de Gimnasio / Recepción">
           <div class="pcard-over"><span class="nav-cta">Presupuestar</span></div>
         </div>
         <div class="pcard-body">
@@ -57,9 +57,9 @@
     </div>
   </div>
 
-  <lineab-footer></lineab-footer>
+  <lineab-footer base="../"></lineab-footer>
 
-  <script src="components.js"></script>
+  <script src="../js/components.js"></script>
   <script>
     const obs = new IntersectionObserver(e => {
       e.forEach(en => { if (en.isIntersecting) en.target.classList.add('in'); });

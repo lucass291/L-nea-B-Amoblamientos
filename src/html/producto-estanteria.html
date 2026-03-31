@@ -12,16 +12,16 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="global.css" />
+  <link rel="stylesheet" href="../css/global.css" />
 </head>
 
 <body>
 
-  <lineab-nav active="productos" transparent="false"></lineab-nav>
+  <lineab-nav base="../" active="productos" transparent="false"></lineab-nav>
 
   <div class="page">
     <nav class="breadcrumb" aria-label="breadcrumb">
-      <a href="index.html">Inicio</a><span>·</span>
+      <a href="../index.html">Inicio</a><span>·</span>
       <a href="productos.html">Productos</a><span>·</span>
       <a href="productos-hogar.html">Hogar</a><span>·</span>
       <span style="color:var(--text)">Estantería Flotante</span>
@@ -35,11 +35,11 @@
           <div class="car-badge">17% OFF</div>
           <div class="car-track" id="track">
             <div class="car-slide cur">
-              <img src="estanteria-flotante/estanteria-escena.webp" alt="Estantería Flotante – escena"
+              <img src="../estanteria-flotante/estanteria-escena.webp" alt="Estantería Flotante – escena"
                 loading="eager" />
             </div>
             <div class="car-slide">
-              <img src="estanteria-flotante/estanteria-frente.webp" alt="Estantería Flotante – frontal"
+              <img src="../estanteria-flotante/estanteria-frente.webp" alt="Estantería Flotante – frontal"
                 loading="lazy" />
             </div>
           </div>
@@ -52,10 +52,10 @@
         </div>
         <div class="car-thumbs">
           <div class="car-thumb on" onclick="goTo(0)" role="button" tabindex="0">
-            <img src="estanteria-flotante/estanteria-escena.webp" alt="Miniatura 1" />
+            <img src="../estanteria-flotante/estanteria-escena.webp" alt="Miniatura 1" />
           </div>
           <div class="car-thumb" onclick="goTo(1)" role="button" tabindex="0">
-            <img src="estanteria-flotante/estanteria-frente.webp" alt="Miniatura 2" />
+            <img src="../estanteria-flotante/estanteria-frente.webp" alt="Miniatura 2" />
           </div>
         </div>
       </div>
@@ -127,9 +127,9 @@
     </div>
   </div>
 
-  <lineab-footer></lineab-footer>
+  <lineab-footer base="../"></lineab-footer>
 
-  <script src="components.js"></script>
+  <script src="../js/components.js"></script>
   <script>
     (function () {
       const total = 2;

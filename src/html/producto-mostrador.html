@@ -8,15 +8,15 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="global.css"/>
+<link rel="stylesheet" href="../css/global.css"/>
 </head>
 <body>
 
-<lineab-nav active="productos" transparent="false"></lineab-nav>
+<lineab-nav base="../" active="productos" transparent="false"></lineab-nav>
 
 <div class="page">
   <nav class="breadcrumb" aria-label="breadcrumb">
-    <a href="index.html">Inicio</a><span>·</span>
+    <a href="../index.html">Inicio</a><span>·</span>
     <a href="productos.html">Productos</a><span>·</span>
     <a href="productos-comercio.html">Comercio</a><span>·</span>
     <span style="color:var(--text)">Mostrador de Recepción</span>
@@ -30,10 +30,10 @@
         <div class="car-badge">A medida</div>
         <div class="car-track" id="track">
           <div class="car-slide cur">
-            <img src="mostrador-recepcion/mostrador-escena.webp" alt="Mostrador de Recepción – escena" loading="eager"/>
+            <img src="../mostrador-recepcion/mostrador-escena.webp" alt="Mostrador de Recepción – escena" loading="eager"/>
           </div>
           <div class="car-slide">
-            <img src="mostrador-recepcion/mostrador-fondo.webp" alt="Mostrador de Recepción – vista secundaria" loading="lazy"/>
+            <img src="../mostrador-recepcion/mostrador-fondo.webp" alt="Mostrador de Recepción – vista secundaria" loading="lazy"/>
           </div>
         </div>
         <button class="car-btn prev" onclick="move(-1)" aria-label="Anterior">&#8592;</button>
@@ -47,10 +47,10 @@
 
       <div class="car-thumbs">
         <div class="car-thumb on" onclick="goTo(0)" role="button" tabindex="0">
-          <img src="mostrador-recepcion/mostrador-escena.webp" alt="Vista 1"/>
+          <img src="../mostrador-recepcion/mostrador-escena.webp" alt="Vista 1"/>
         </div>
         <div class="car-thumb" onclick="goTo(1)" role="button" tabindex="0">
-          <img src="mostrador-recepcion/mostrador-fondo.webp" alt="Vista 2"/>
+          <img src="../mostrador-recepcion/mostrador-fondo.webp" alt="Vista 2"/>
         </div>
       </div>
     </div>
@@ -110,9 +110,9 @@
   </div>
 </div>
 
-<lineab-footer></lineab-footer>
+<lineab-footer base="../"></lineab-footer>
 
-<script src="components.js"></script>
+<script src="../js/components.js"></script>
 <script>
 (function(){
   const total = 2;
